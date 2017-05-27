@@ -29,6 +29,6 @@ class Match(models.Model):
     homeScore = models.IntegerField()
     awayScore = models.IntegerField()
     matchImportance = models.CharField(max_length=25)
-
+    matchDate = models.DateField()
     def __unicode__(self):
         return self.homeScore + " - " + self.awayScore + " -- " + self.home + " v. " + self.away
